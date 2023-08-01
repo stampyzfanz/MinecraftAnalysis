@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Video</title>
+    <link rel="icon" type="image/x-icon" href="/media/VS Code icon.svg">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+    <script src="https://kit.fontawesome.com/e6999c0eb3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">
+            <img class="logo" src="assets/green vr goggles.png" alt="">
+            <img class="logo" src="assets/white vr goggles.png" alt="" id="forHover">
+        </a>
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="video.html" class="active">Video</a></li>
+            <li><a href="overview.html">Overview</a></li>
+            <li><a href="uses.html">Uses</a></li>
+            <li><a href="system.html">System</a></li>
+        </ul>
+    </div>
+
+    <div style="margin-top: 75px;"></div>
+
+    <!-- <img src="assets/HighestResolution.jpg" alt="" class="hero-image"> -->
+    <div class="hero-image-container">
+        <img src="assets/help.jpg" alt="Minecraft" class="hero-image" style="object-position: 50% 80%;">
+    </div>
+
+    <div class="hero-image-wave"></div>
+
+    <div class="chevronPositioner">
+        <div class="chevronContainer">
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+            <span class="pulseVisibility">Scroll down</span>
+        </div>
+    </div>
+
+    <h1 class="moveHigher">Instructional video</h1>
+
+    <div class="videoRow">
+        <div>
+            <figure class="video">
+                <div id="videoAndControls">
+                    <video id="video" preload="metadata" width="540">
+                        <source src="assets/help.mp4" type="video/mp4">
+                    </video>
+                    <div id="video-controls" class="controls" data-state="visible">
+                        <button id="playpause" type="button" data-state="play"><img src="assets/click.gif" alt=""
+                                id="click-gif"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon"
+                                viewBox="0 0 512 512">
+                                <title>Caret Forward Circle</title>
+                                <path
+                                    d="M238.23 342.43l89.09-74.13a16 16 0 000-24.6l-89.09-74.13A16 16 0 00212 181.86v148.28a16 16 0 0026.23 12.29z"
+                                    fill="#00CB7D" />
+                                <path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z"
+                                    fill="none" stroke="#1EF1A0" stroke-miterlimit="10" stroke-width="32" />
+                            </svg></button>
+                        <div id="current-time">00:00</div>
+                        <div class="progress">
+                            <progress id="progress" value="0" min="0">
+                            </progress>
+                        </div>
+                        <button id="mute" type="button" data-state="mute"><svg xmlns="http://www.w3.org/2000/svg"
+                                class="ionicon" viewBox="0 0 512 512">
+                                <title>Volume High</title>
+                                <path
+                                    d="M126 192H56a8 8 0 00-8 8v112a8 8 0 008 8h69.65a15.93 15.93 0 0110.14 3.54l91.47 74.89A8 8 0 00240 392V120a8 8 0 00-12.74-6.43l-91.47 74.89A15 15 0 01126 192zM320 320c9.74-19.38 16-40.84 16-64 0-23.48-6-44.42-16-64M368 368c19.48-33.92 32-64.06 32-112s-12-77.74-32-112M416 416c30-46 48-91.43 48-160s-18-113-48-160"
+                                    fill="none" stroke="#1EF1A0" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="32" />
+                            </svg></button>
+                        <button id="fullscreen" type="button"></button>
+                    </div>
+                </div>
+            </figure>
+        </div>
+        <div> <!-- RIGHT -->
+            <div class="timestamp" href="google.com" onclick="video.currentTime = 0; video.play();">
+                Introduction
+                <div class="underline">0:00</div>
+            </div>
+            <div class="timestamp" href="google.com" onclick="video.currentTime = 25; video.play();">
+                Navigation tutorial
+                <div class="underline">0:25</div>
+            </div>
+            <div class="timestamp" href="google.com" onclick="video.currentTime = 51; video.play();">
+                Video control tutorial
+                <div class="underline">0:51</div>
+            </div>
+            <div class="timestamp" href="google.com" onclick="video.currentTime = 60+22; video.play();">
+                Audio control tutorial
+                <div class="underline">1:22</div>
+            </div>
+            <div class="timestamp" href="google.com" onclick="video.currentTime = 2*60+3.75; video.play();">
+                Conclusion
+                <div class="underline">2:03</div>
+            </div>
+            <div class="timestamp" href="google.com" onclick="video.currentTime = 2*60+54; video.play();">
+                Credits
+                <div class="underline">2:54</div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+    <footer>
+        <div class="row3">
+            <div class="col3">
+                <img src="assets/white vr goggles.svg" alt="" style="margin-top: 30px;">
+            </div>
+
+            <div class="col3">
+                <ul>
+                    <li>
+                        <h3>Sitemap</h3>
+                    </li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="video.html">Video</a></li>
+                    <li><a href="overview.html">Overview</a></li>
+                    <li><a href="uses.html">Uses</a></li>
+                    <li><a href="system.html">System</a></li>
+                </ul>
+            </div>
+
+            <div class="col3">
+                <ul>
+                    <li>
+                        <h3>Resources used</h3>
+                    </li>
+                    <li><a
+                            href="https://www.pearson.com/ped-blogs/pearsonstudents/2019/04/lowdown-help-solve-feature-pearsons-mylab.html">Hero
+                            image</a></li>
+                    <li><a href="https://freesound.org/people/FoolBoyMedia/sounds/397434/">Cheer sound effect</a></li>
+                    <li><a href="https://freesound.org/people/deleted_user_4772965/sounds/256459/">Scroll sound
+                            effect</a></li>
+                    <li><a
+                            href="https://geekculture.co/geek-review-logitech-g502-lightspeed-wireless-gaming-mouse-with-powerplay/">Scroll
+                            video</a></li>
+                    <li><a href="https://c418.org/">Sweden song</a></li>
+                    <li><a href="https://www.flaticon.com/free-animated-icon/click_6416353">Click GIF</a></li>
+                    <li><a href="https://www.online-image-editor.com/">Editing click GIF</a></li>
+                    <!-- resources used on every page -->
+                    <li><a
+                            href="https://www.istockphoto.com/vector/vr-headset-icon-virtual-reality-device-glasses-vector-on-isolated-white-background-gm1270225947-373246732">VR
+                            headset logo</a></li>
+                    <li><a href="https://codemyui.com/dripping-down-arrow/">Scroll down arrow</a></li>
+                    </p>
+            </div>
+        </div>
+
+        <p class="margins smol center">Stampyzfanz ©2023. "Minecraft" is a trademark of Mojang Synergies AB</p>
+    </footer>
+</body>
+<script>
+    const clickGif = document.querySelector("#click-gif")
+
+    window.setTimeout(() => {
+        clickGif.style.transition = "opacity 0.3s";
+    }, 300);
+
+    clickGif.addEventListener("mouseover", () => {
+        clickGif.style.opacity = 0;
+    })
+
+    addEventListener("scroll", (event) => {
+        window.setTimeout(() => {
+            clickGif.style.opacity = 0.6;
+        }, 5000);
+    });
+
+    // scroll down animation
+
+    window.setTimeout(() => {
+        document.querySelector(".chevronPositioner").style.transition = "opacity 0.3s";
+    }, 300);
+
+    let hasScrolled = false;
+    addEventListener("scroll", (event) => {
+        hasScrolled = true;
+        document.querySelector(".chevronPositioner").style.opacity = "0";
+    });
+
+    setTimeout(() => {
+        if (!hasScrolled) {
+            document.querySelector(".chevronPositioner").style.opacity = "1";
+        }
+    }, 3000);
+
+</script>
+<script src="video.js"></script>
+
+</html>
